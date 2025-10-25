@@ -1,6 +1,3 @@
-import 'q5';
-import 'p5play';
-
 await createCanvas();
 world.gravity.y = 10;
 
