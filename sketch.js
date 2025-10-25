@@ -1,6 +1,7 @@
-let q = await Q5.WebGPU();
+import 'q5';
+import 'p5play';
 
-new Canvas();
+await createCanvas();
 world.gravity.y = 10;
 
 let ball = new Sprite();
@@ -12,15 +13,15 @@ let groundA = new Sprite();
 groundA.x = -120;
 groundA.width = 200;
 groundA.rotation = 20;
-groundA.physics = STATIC;
+groundA.collider = STATIC;
 
 let groundB = new Sprite();
 groundB.x = 120;
 groundB.width = 200;
 groundB.rotation = -20;
-groundB.physics = STATIC;
+groundB.collider = STATIC;
 
-q.update = () => {
+Q5.update = function () {
 	background('skyblue');
 
 	textAlign(CENTER);
