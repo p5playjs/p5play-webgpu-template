@@ -1,4 +1,4 @@
-await createCanvas();
+await Canvas();
 world.gravity.y = 10;
 
 let ball = new Sprite();
@@ -18,7 +18,7 @@ groundB.width = 200;
 groundB.rotation = -20;
 groundB.physics = STATIC;
 
-Q5.update = function () {
+q5.update = function () {
 	background('skyblue');
 
 	textAlign(CENTER);
